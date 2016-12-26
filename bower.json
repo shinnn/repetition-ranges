@@ -1,0 +1,41 @@
+{
+  "name": "repetition-ranges",
+  "description": "Get start/end positions where a given value consecutively appears in the array",
+  "keywords": [
+    "array",
+    "index",
+    "repeat",
+    "repetition",
+    "duplicate",
+    "search",
+    "find",
+    "range",
+    "position",
+    "start",
+    "end",
+    "sequence",
+    "series",
+    "elements"
+  ],
+  "main": "module.js",
+  "moduleType": "es6",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/sequence-positions.git"
+  },
+  "authors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "arr-indexes-of": "^1.0.1"
+  },
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}
