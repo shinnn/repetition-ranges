@@ -1,7 +1,3 @@
-/*!
- * repetition-ranges | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/repetition-ranges
-*/
 import arrIndexesOf from 'arr-indexes-of';
 
 export default function repetitionRanges(arr, value) {
