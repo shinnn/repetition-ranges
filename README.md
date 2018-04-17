@@ -1,7 +1,6 @@
 # repetition-ranges
 
-[![NPM version](https://img.shields.io/npm/v/repetition-ranges.svg)](https://www.npmjs.com/package/repetition-ranges)
-[![Bower version](https://img.shields.io/bower/v/repetition-ranges.svg)](https://github.com/shinnn/repetition-ranges/releases)
+[![npm version](https://img.shields.io/npm/v/repetition-ranges.svg)](https://www.npmjs.com/package/repetition-ranges)
 [![Build Status](https://travis-ci.org/shinnn/repetition-ranges.svg?branch=master)](https://travis-ci.org/shinnn/repetition-ranges)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/repetition-ranges.svg)](https://coveralls.io/r/shinnn/repetition-ranges)
 
@@ -22,19 +21,17 @@ repetitionRanges(['a', 'b', 'a', 'a', 'b', 'a', 'a', 'a'], 'a');
 
 ## Installation
 
-### [npm](https://www.npmjs.com/)
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install repetition-ranges
 ```
 
-### [bower](https://bower.io/)
-
-```
-bower install repetition-ranges
-```
-
 ## API
+
+```javascript
+import repetitionRanges from 'repetition-ranges';
+```
 
 ### repetitionRanges(*array*, *searchValue*)
 
