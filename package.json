@@ -1,49 +1,49 @@
 {
-  "name": "repetition-ranges",
-  "version": "1.0.1",
-  "description": "Get start/end positions where a given value consecutively appears in the array",
-  "repository": "shinnn/repetition-ranges",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "scripts": {
-    "prebuild": "eslint --fix --format=codeframe module.js test.js",
-    "build": "rollup --config=node:module",
-    "pretest": "npm run-script build",
-    "test": "istanbul cover test.js"
-  },
-  "license": "CC0-1.0",
-  "module": "module.js",
-  "files": [
-    "index.js",
-    "module.js"
-  ],
-  "keywords": [
-    "array",
-    "index",
-    "repeat",
-    "repetition",
-    "duplicate",
-    "search",
-    "find",
-    "range",
-    "position",
-    "start",
-    "end",
-    "sequence",
-    "series",
-    "elements"
-  ],
-  "dependencies": {
-    "arr-indexes-of": "^1.0.1"
-  },
-  "devDependencies": {
-    "@shinnn/eslint-config": "^3.3.5",
-    "eslint": "^3.12.2",
-    "istanbul": "^0.4.5",
-    "rollup": "^0.38.0",
-    "rollup-config-module": "^1.0.0",
-    "tape": "^4.6.2"
-  },
-  "eslintConfig": {
-    "extends": "@shinnn"
-  }
+	"name": "repetition-ranges",
+	"version": "1.0.1",
+	"description": "Get start/end positions where a given value consecutively appears in the array",
+	"repository": "shinnn/repetition-ranges",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"scripts": {
+		"prebuild": "eslint --fix --format=codeframe module.mjs test.js",
+		"build": "rollup --config=node:module",
+		"pretest": "npm run-script build",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"license": "CC0-1.0",
+	"module": "index.mjs",
+	"files": [
+		"index.js",
+		"index.mjs"
+	],
+	"keywords": [
+		"array",
+		"index",
+		"repeat",
+		"repetition",
+		"duplicate",
+		"search",
+		"find",
+		"range",
+		"position",
+		"start",
+		"end",
+		"sequence",
+		"series",
+		"elements"
+	],
+	"dependencies": {
+		"arr-indexes-of": "^1.0.1"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config": "^5.0.0",
+		"eslint": "^4.19.1",
+		"nyc": "^11.7.1",
+		"rollup": "^0.58.1",
+		"rollup-config-module": "^2.0.0",
+		"tape": "^4.6.2"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	}
 }

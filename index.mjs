@@ -1,8 +1,6 @@
-'use strict';
+import arrIndexesOf from 'arr-indexes-of';
 
-var arrIndexesOf = require('arr-indexes-of');
-
-function repetitionRanges(arr, value) {
+export default function repetitionRanges(arr, value) {
 	var indexes = arrIndexesOf(arr, value);
 
 	var results = [];
@@ -28,5 +26,3 @@ function repetitionRanges(arr, value) {
 
 	return results;
 }
-
-module.exports = repetitionRanges;
