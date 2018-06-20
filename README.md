@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/repetition-ranges.svg)](https://www.npmjs.com/package/repetition-ranges)
 [![Build Status](https://travis-ci.org/shinnn/repetition-ranges.svg?branch=master)](https://travis-ci.org/shinnn/repetition-ranges)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/repetition-ranges.svg)](https://coveralls.io/r/shinnn/repetition-ranges)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/repetition-ranges.svg)](https://coveralls.io/github/shinnn/repetition-ranges)
 
 Get start/end positions where a given value consecutively appears in the array
 
@@ -50,4 +50,4 @@ repetitionRanges([], 'a']); //=> []
 
 ## License
 
-[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe

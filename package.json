@@ -5,12 +5,12 @@
 	"repository": "shinnn/repetition-ranges",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"scripts": {
-		"prebuild": "eslint --fix --format=codeframe module.mjs test.js",
+		"prebuild": "eslint --fix --format=codeframe index.mjs test.js",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
 		"test": "nyc --reporter=html --reporter=text node test.js"
 	},
-	"license": "CC0-1.0",
+	"license": "ISC",
 	"module": "index.mjs",
 	"files": [
 		"index.js",
