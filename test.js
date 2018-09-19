@@ -40,7 +40,7 @@ test('repetitionRanges()', t => {
 
 	t.throws(
 		() => repetitionRanges(1, ['a']),
-		/^TypeError.*Expected an array, but got 1 \(number\)\./,
+		/^TypeError.*Expected an array, but got 1 \(number\)\./u,
 		'should throw a type error when the first argument is a non-array value.'
 	);
 
