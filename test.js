@@ -15,8 +15,8 @@ test('repetitionRanges()', t => {
 	t.deepEqual(arr, ['a', 'b', 'b'], 'should not mutate the passed array.');
 
 	t.deepEqual(
-		repetitionRanges([0, 0, '0', 0, 0, 0, Buffer.from('0'), null, undefined], 0),
-		[{start: 0, end: 1}, {start: 3, end: 5}],
+		repetitionRanges([0, 0, '0', 0, 0, 0, Buffer.from('0'), null, undefined, 0, 0], 0),
+		[{start: 0, end: 1}, {start: 3, end: 5}, {start: 9, end: 10}],
 		'should get multiple positions if exist.'
 	);
 
@@ -30,6 +30,12 @@ test('repetitionRanges()', t => {
 		repetitionRanges([1, 2, 3], 123),
 		[],
 		'should return an empty array if the search value doesn\'t exist in the array.'
+	);
+
+	t.deepEqual(
+		repetitionRanges([1, 2, 3], 1),
+		[],
+		'should return an empty array if the search value appears only once.'
 	);
 
 	t.deepEqual(

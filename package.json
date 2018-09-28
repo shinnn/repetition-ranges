@@ -33,7 +33,7 @@
 		"elements"
 	],
 	"dependencies": {
-		"arr-indexes-of": "^2.0.0"
+		"append-type": "^1.0.1"
 	},
 	"devDependencies": {
 		"@shinnn/eslint-config": "^6.7.1",

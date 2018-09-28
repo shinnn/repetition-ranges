@@ -1,28 +1,61 @@
-import arrIndexesOf from 'arr-indexes-of';
+/*!
+ * repetition-ranges | ISC (c) Shinnosuke Watanabe
+ * https://github.com/shinnn/repetition-ranges
+*/
+import appendType from 'append-type';
 
 export default function repetitionRanges(arr, value) {
-	var indexes = arrIndexesOf(arr, value);
+	if (!Array.isArray(arr)) {
+		throw new TypeError('Expected an array, but got ' + appendType(arr) + '.');
+	}
 
 	var results = [];
-	var i = 0;
-	var start = null;
 
-	while (i < indexes.length) {
-		if (indexes[i] === indexes[i + 1] - 1) {
-			if (start === null) {
-				start = indexes[i];
-			}
-		} else if (start !== null) {
-			results.push({
-				start: start,
-				end: indexes[i]
-			});
+	if (arr.length < 2) {
+		return results;
+	}
 
+	var i = arr.indexOf(value);
+
+	if (i === -1) {
+		return results;
+	}
+
+	var last = arr.lastIndexOf(value);
+
+	if (i === last) {
+		return results;
+	}
+
+	if (i + 1 === last) {
+		return [{start: i, end: last}];
+	}
+
+	var start = i++;
+
+	do {
+		if (arr[i] !== value) {
 			start = null;
+			continue;
 		}
 
-		i += 1;
-	}
+		if (arr[i + 1] === value) {
+			if (start === null) {
+				start = i;
+			}
+
+			continue;
+		}
+
+		if (start !== null) {
+			results.push({
+				start: start,
+				end: i
+			});
+		}
+
+		start = null;
+	} while (i++ < last);
 
 	return results;
 }
