@@ -13,14 +13,19 @@ module.exports = function repetitionRanges(arr, value) {
 	}
 
 	var results = [];
+	var arrLastIndex = arr.length - 1;
 
-	if (arr.length < 2) {
+	if (arrLastIndex < 1) {
 		return results;
 	}
 
 	var i = arr.indexOf(value);
 
 	if (i === -1) {
+		return results;
+	}
+
+	if (i === arrLastIndex) {
 		return results;
 	}
 

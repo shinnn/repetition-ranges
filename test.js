@@ -27,9 +27,15 @@ test('repetitionRanges()', t => {
 	);
 
 	t.deepEqual(
+		repetitionRanges([true, 'true'], 'true'),
+		[],
+		'should compare values with the "same value zero" level.'
+	);
+
+	t.deepEqual(
 		repetitionRanges([1, 2, 3], 123),
 		[],
-		'should return an empty array if the search value doesn\'t exist in the array.'
+		'should return an empty array if the search value is not found.'
 	);
 
 	t.deepEqual(
