@@ -1,6 +1,6 @@
 {
 	"name": "repetition-ranges",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Get start/end positions where a given value consecutively appears in the array",
 	"repository": "shinnn/repetition-ranges",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
